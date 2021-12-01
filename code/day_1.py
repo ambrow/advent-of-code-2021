@@ -1,6 +1,7 @@
 import pandas as pd
+import constants
 
-df = pd.read_csv("input_1.csv")
+df = pd.read_csv(constants.wd + "/inputs/input_1.csv")
 
 # part one
 single_difference = (df.column.diff() > 0).sum()
